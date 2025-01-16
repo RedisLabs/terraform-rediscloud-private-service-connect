@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "/"
+    groups:
+      update-deps:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      gomod-deps:
+        patterns:
+          - "*"
