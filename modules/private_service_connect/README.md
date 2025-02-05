@@ -9,13 +9,13 @@ rules and DNS entries a particular GCP subnetwork.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.2 |
-| <a name="requirement_rediscloud"></a> [rediscloud](#requirement\_rediscloud) | ~> 2.0 |
+| <a name="requirement_rediscloud"></a> [rediscloud](#requirement\_rediscloud) | ~> 2.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_rediscloud"></a> [rediscloud](#provider\_rediscloud) | ~> 2.0 |
+| <a name="provider_rediscloud"></a> [rediscloud](#provider\_rediscloud) | ~> 2.1 |
 
 ## Modules
 
