@@ -98,7 +98,7 @@ jobs:
               - 'modules/**'
               - '.github/workflows/**'
 
-      - run: go test ./test
+      - run: go test ./test -timeout 60m -p=1 -parallel=2
         if: steps.filter.outputs.code-changes == 'true'
         env:
           REDISCLOUD_ACCESS_KEY: ${{ secrets.REDISCLOUD_ACCESS_KEY }}
