@@ -15,13 +15,13 @@ provider "gcp" {
 }
 
 module "psc" {
-  source  = "RedisLabs/private_service_connect/rediscloud"
+  source  = "RedisLabs/private-service-connect/rediscloud"
 
   rediscloud_subscription_type = "active-active"
   rediscloud_subscription_id   = var.subscription_id
   rediscloud_region_id         = var.region_id
-
-  gcp_region              = var.gcp_region
+  
+  gcp_region = var.gcp_region
   
   endpoints = [
     {
@@ -101,8 +101,8 @@ tflint --recursive
 * `REDISCLOUD_ACCESS_KEY` - Account Cloud API Access Key
 * `REDISCLOUD_SECRET_KEY` - Individual user Cloud API Secret Key
 * `REDISCLOUD_URL` - (Optional) Redis Cloud API Base URL
-* `GCP_PROJECT` - The GCP project ID
-* `GOOGLE_APPLICATION_CREDENTIALS` or other supported environment variables described in [Terraform GCP Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)
+* `GCP_PROJECT_ID` - The GCP project ID
+* `GOOGLE_CREDENTIALS` or other supported environment variables described in [Terraform GCP Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)
 
 ```shell
 go test ./test
