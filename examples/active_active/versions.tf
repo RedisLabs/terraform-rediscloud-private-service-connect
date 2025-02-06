@@ -3,7 +3,7 @@ terraform {
   required_providers {
     rediscloud = {
       source  = "RedisLabs/rediscloud"
-      version = "~> 2.0" # TODO Bump to 2.1
+      version = "~> 2.1"
     }
     google = {
       source  = "hashicorp/google"
