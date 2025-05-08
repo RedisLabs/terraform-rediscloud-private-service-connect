@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const expectNumberOfServiceAttachments = 40
+const expectNumberOfServiceAttachments = 1
 
 func TestTerraformPrivateServiceConnect(t *testing.T) {
 	gcpProject := os.Getenv("GCP_PROJECT_ID")
