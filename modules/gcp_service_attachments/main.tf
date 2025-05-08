@@ -3,7 +3,7 @@ locals {
   # plan time, we cannot use `service_attachments` from the private service connect endpoint directly
   # as those are only computed after applying the plan. Because of that we need a fixed count
   # here unfortunately.
-  service_attachment_count = 40
+  service_attachment_count = 1
 }
 
 data "google_compute_subnetwork" "subnet" {
